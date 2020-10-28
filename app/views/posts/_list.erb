@@ -1,0 +1,14 @@
+<h1>Your Posts</h1>
+<% for post in @posts.reverse %>
+      <tr>
+        <td><h2><%= post.title %></h2></td>
+    </tr>
+    <tr>
+        <td><%= post.body %></td>
+    </tr>
+    <tr>
+    	<td><%= post.id %></td>
+    </tr>    
+    <% end %>
+    <br>
+<br>
